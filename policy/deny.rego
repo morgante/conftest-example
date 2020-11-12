@@ -7,5 +7,5 @@ has_field(obj, field) {
 deny[msg] {
     location := input.resource.google_storage_bucket[bucket].location
     location == "US"
-    msg = sprintf("Bucket `%v` is using a storage bucket.", [bucket])
+    msg = sprintf("Bucket `%v` is located in the US.", [bucket])
 }
