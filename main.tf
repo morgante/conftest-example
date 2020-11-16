@@ -40,6 +40,6 @@ resource "google_storage_bucket" "my-bucket" {
 }
 
 module "bucket" {
-  path = "./modules/bucket"
+  source = "./modules/bucket"
   project_id = var.project_id
 }
